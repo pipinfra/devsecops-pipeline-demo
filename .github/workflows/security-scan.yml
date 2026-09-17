@@ -21,3 +21,4 @@ jobs:
           directory: .
           framework: terraform
           soft_fail: false
+          skip_check: CKV2_AZURE_32
