@@ -13,7 +13,8 @@ resource "azurerm_key_vault" "kv" {
   sku_name                  = "standard"
   rbac_authorization_enabled = true
   soft_delete_retention_days = 90
-  purge_protection_enabled   = true
+  purge_protection_enabled      = true
+  public_network_access_enabled = false
   network_acls {
     default_action = "Deny"
     bypass         = "AzureServices"
